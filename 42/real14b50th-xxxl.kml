@@ -7,7 +7,7 @@ Global
     Print    "Graphic based on a scan by Hewlett-Packard."
     Print    ""
     Print    "==================================================="
-    Title    "Eric's Real HP 14B 50th Anniversary (XXXL)"
+    Title    "Eric's Real HP 14B 50th Anniversary"
     Author   "Eric Rechlin"
 	Hardware "Lewis"	# Sacajawea
 	Model    "I"		# Midas

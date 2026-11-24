@@ -7,7 +7,7 @@ Global
 	Print    "Graphic based on a scan by Hewlett-Packard."
 	Print    ""
 	Print    "================================================="
-	Title    "Eric's Real HP 20S (XXXL)"
+	Title    "Eric's Real HP 20S"
 	Author   "Eric Rechlin"
 	Hardware "Lewis"	# Bert
 	Model    "F"		# Erni

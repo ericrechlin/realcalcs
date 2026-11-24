@@ -7,7 +7,7 @@ Global
 	Print    "Graphic based on a scan by Hewlett-Packard."
 	Print    ""
 	Print    "================================================="
-	Title    "Eric's Real HP 32SII (XXXL)"
+	Title    "Eric's Real HP 32SII"
 	Author   "Eric Rechlin"
 	Hardware "Lewis"
 	Model    "N"		# Nardo

@@ -7,7 +7,7 @@ Global
 	Print    "Graphic based on a scan by Hewlett-Packard."
 	Print    ""
 	Print    "================================================="
-	Title    "Eric's Real HP 10B (XXXL)"
+	Title    "Eric's Real HP 10B"
 	Author   "Eric Rechlin"
 	Hardware "Lewis"	# Bert
 	Model    "E"		# Ernst
