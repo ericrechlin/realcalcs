@@ -7,7 +7,7 @@ Global
 	Print    "Graphic based on a photo by Hewlett-Packard."
 	Print    ""
 	Print    "================================================="
-	Title    "Eric's Real HP 28C (XL)"
+	Title    "Eric's Real HP 28C"
 	Author   "Eric Rechlin"
 	Hardware "Centipede"
 	Model    "P"		# Paladin
