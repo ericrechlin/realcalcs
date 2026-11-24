@@ -1,0 +1,450 @@
+Global
+	Print    "================================================="
+	Print    ""
+	Print    "This Real 21S graphic is by Eric Rechlin."
+	Print    "KML script based on work by Christoph Giesselink"
+	Print    "http://www.hpcalc.org/"
+	Print    "Graphic based on a scan by Hewlett-Packard."
+	Print    ""
+	Print    "================================================="
+	Title    "Eric's Real HP 21S (XXXL)"
+	Author   "Eric Rechlin"
+	Hardware "Lewis"	# Bert
+	Model    "C"		# Monte Carlo
+	Rom      "HP21S.ROM"
+	Bitmap   "real21s-xxxl.png"
+	Color    0 127 127 127
+	Debug    0
+	Icon "21s.ico"
+End
+
+Background
+	Offset   0   0
+	Size   1352 2510
+End
+
+Lcd
+	Offset 142 526		# position of display area
+	Color  0 148 161 152	# segment color table
+	Color  1 116 128 120
+	Color  2  87  96  90
+	Color  3  58  64  60
+	Color  4  29  32  30
+	Color  5   0   0   0
+	Color  6   0   0   0
+	Color  7   0   0   0
+End
+
+Digit
+	Distance 84		# distance between segments
+End
+
+# the offset positions of the annunciators are relative to the LCD offset,
+# this makes it possible to move the complete display as a whole
+
+Annunciator 1           # segment a   +-a-+
+	Size 58 12          #             f   b
+	Offset 65 0         #             +-g-+
+	Down 97 2512        #             e   c dp
+End                     #             +-d-+ cm
+
+Annunciator 2			# segment b
+	Size 16 55
+	Offset 107 0
+	Down 29 2512
+End
+
+Annunciator 3			# segment c
+	Size 16 61
+	Offset 107 55
+	Down 75 2512
+End
+
+Annunciator 4			# segment d
+	Size 58 12
+	Offset 65 104
+	Down 99 2544
+End
+
+Annunciator 5			# segment e
+	Size 16 61
+	Offset 65 55
+	Down 52 2512
+End
+
+Annunciator 6			# segment f
+	Size 16 55
+	Offset 65 0
+	Down 5 2512
+End
+
+Annunciator 7			# segment g
+	Size 58 12
+	Offset 65 49
+	Down 98 2528
+End
+
+Annunciator 8			# segment dp
+	Size 15 17
+	Offset 126 99
+	Down 171 2516
+End
+
+Annunciator 9			# segment cm
+	Size 23 26
+	Offset 119 111
+	Down 164 2540
+End
+
+Annunciator 10			# segment SIGN
+	Size 43 12
+	Offset 0 49
+	Down 105 2560
+End
+
+Annunciator 11			# segment SHIFT
+	Size 70 29
+	Offset 0 157
+	Down 369 2515
+End
+
+Annunciator 12			# segment LSHF
+	Size 65 41
+	Offset 88 152
+	Down 229 2515
+End
+
+Annunciator 13			# segment RSHF
+	Size 65 41
+	Offset 171 152
+	Down 299 2515
+End
+
+Annunciator 14			# segment COLN
+	Size 14 41
+	Offset 255 152
+	Down 206 2521
+End
+
+Annunciator 15			# segment PEND
+	Size 88 32
+	Offset 296 157
+	Down 525 2515
+End
+
+Annunciator 16			# segment BEGN
+	Size 100 32
+	Offset 408 157
+	Down 615 2515
+End
+
+Annunciator 17			# segment BATT
+	Size 79 34
+	Offset 528 157
+	Down 440 2515
+End
+
+Annunciator 18			# segment G
+	Size 25 32
+	Offset 628 157
+	Down 717 2515
+End
+
+Annunciator 19			# segment RAD
+	Size 69 32
+	Offset 653 157
+	Down 742 2515
+End
+
+Annunciator 20			# segment HEX
+	Size 67 32
+	Offset 750 157
+	Down 811 2515
+End
+
+Annunciator 21			# segment OCT
+	Size 69 32
+	Offset 820 157
+	Down 878 2515
+End
+
+Annunciator 22			# segment BIN
+	Size 54 32
+	Offset 891 157
+	Down 947 2515
+End
+
+Annunciator 23			# segment PRGM
+	Size 95 32
+	Offset 968 157
+	Down 1003 2515
+End
+
+Button 71			# ON, should be the first defined key
+	Type 0
+	Size 123 92
+	Offset 114 2232
+	Down 114 2242
+	OutIn 0 32768
+End
+
+Button 11
+	Type 0
+	Size 123 92
+	Offset 114 1044
+	Down 114 1053
+	OutIn 5 64
+End
+Button 12
+	Type 0
+	Size 123 92
+	Offset 315 1044
+	Down 315 1053
+	OutIn 4 64
+End
+Button 13
+	Type 0
+	Size 123 92
+	Offset 517 1044
+	Down 517 1053
+	OutIn 3 64
+End
+Button 14
+	Type 0
+	Size 123 92
+	Offset 713 1044
+	Down 713 1053
+	OutIn 2 64
+End
+Button 15
+	Type 0
+	Size 123 92
+	Offset 914 1044
+	Down 914 1053
+	OutIn 1 64
+End
+Button 16
+	Type 0
+	Size 123 92
+	Offset 1116 1044
+	Down 1116 1053
+	OutIn 0 64
+End
+
+Button 21
+	Type 0
+	Size 123 92
+	Offset 114 1240
+	Down 114 1250
+	OutIn 5 32
+End
+Button 22
+	Type 0
+	Size 123 92
+	Offset 315 1240
+	Down 315 1250
+	OutIn 4 32
+End
+Button 23
+	Type 0
+	Size 123 92
+	Offset 517 1240
+	Down 517 1250
+	OutIn 3 32
+End
+Button 24
+	Type 0
+	Size 123 92
+	Offset 713 1240
+	Down 713 1250
+	OutIn 2 32
+End
+Button 25
+	Type 0
+	Size 123 92
+	Offset 914 1240
+	Down 914 1250
+	OutIn 1 32
+End
+Button 26
+	Type 0
+	Size 123 92
+	Offset 1116 1240
+	Down 1116 1250
+	OutIn 0 32
+End
+
+Button 31
+	Type 0
+	Size 320 92
+	Offset 114 1442
+	Down 114 1451
+	OutIn 4 16
+End
+Button 32
+	Type 0
+	Size 123 92
+	Offset 517 1442
+	Down 517 1451
+	OutIn 3 16
+End
+Button 33
+	Type 0
+	Size 123 92
+	Offset 713 1442
+	Down 713 1451
+	OutIn 2 16
+End
+Button 34
+	Type 0
+	Size 123 92
+	Offset 914 1442
+	Down 914 1451
+	OutIn 1 16
+End
+Button 35
+	Type 0
+	Size 123 92
+	Offset 1116 1442
+	Down 1116 1451
+	OutIn 0 16
+End
+
+Button 41
+	Type 0
+	Size 123 92
+	Offset 114 1638
+	Down 114 1648
+	OutIn 5 8
+End
+Button 42
+	Type 0
+	Size 165 92
+	Offset 343 1638
+	Down 343 1648
+	OutIn 3 8
+End
+Button 43
+	Type 0
+	Size 165 92
+	Offset 590 1638
+	Down 590 1648
+	OutIn 2 8
+End
+Button 44
+	Type 0
+	Size 165 92
+	Offset 832 1638
+	Down 832 1648
+	OutIn 1 8
+End
+Button 45
+	Type 0
+	Size 165 92
+	Offset 1074 1638
+	Down 1074 1648
+	OutIn 0 8
+End
+
+Button 51
+	Type 0
+	Size 123 92
+	Offset 114 1834
+	Down 114 1844
+	OutIn 5 4
+End
+Button 52
+	Type 0
+	Size 165 92
+	Offset 343 1834
+	Down 343 1844
+	OutIn 3 4
+End
+Button 53
+	Type 0
+	Size 165 92
+	Offset 590 1834
+	Down 590 1844
+	OutIn 2 4
+End
+Button 54
+	Type 0
+	Size 165 92
+	Offset 832 1834
+	Down 832 1844
+	OutIn 1 4
+End
+Button 55
+	Type 0
+	Size 165 92
+	Offset 1074 1834
+	Down 1074 1844
+	OutIn 0 4
+End
+
+Button 61
+	Type 0
+	Size 123 92
+	Offset 114 2032
+	Down 114 2041
+	OutIn 5 2
+End
+Button 62
+	Type 0
+	Size 165 92
+	Offset 343 2032
+	Down 343 2041
+	OutIn 3 2
+End
+Button 63
+	Type 0
+	Size 165 92
+	Offset 590 2032
+	Down 590 2041
+	OutIn 2 2
+End
+Button 64
+	Type 0
+	Size 165 92
+	Offset 832 2032
+	Down 832 2041
+	OutIn 1 2
+End
+Button 65
+	Type 0
+	Size 165 92
+	Offset 1074 2032
+	Down 1074 2041
+	OutIn 0 2
+End
+
+Button 72
+	Type 0
+	Size 165 92
+	Offset 343 2232
+	Down 343 2242
+	OutIn 3 1
+End
+Button 73
+	Type 0
+	Size 165 92
+	Offset 590 2232
+	Down 590 2242
+	OutIn 2 1
+End
+Button 74
+	Type 0
+	Size 165 92
+	Offset 832 2232
+	Down 832 2242
+	OutIn 1 1
+End
+Button 75
+	Type 0
+	Size 165 92
+	Offset 1074 2232
+	Down 1074 2242
+	OutIn 0 1
+End
+
+Include "keyb10b.kmi"

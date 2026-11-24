@@ -1,0 +1,689 @@
+Global
+	Print    "================================================="
+	Print    ""
+	Print    "This Real 32SII graphic is by Eric Rechlin"
+	Print    "KML based on one by Christoph Giesselink."
+	Print    "http://www.hpcalc.org/"
+	Print    "Graphic based on a scan by Hewlett-Packard."
+	Print    ""
+	Print    "================================================="
+	Title    "Eric's Real HP 32SII (XXL)"
+	Author   "Eric Rechlin"
+	Hardware "Lewis"
+	Model    "N"		# Nardo
+	Rom      "HP32SII.ROM"
+	Bitmap   "real32sii-xxl.png"
+	Icon     "32sii.ico"
+	Color    0 127 127 127
+	Debug    0
+End
+
+Background
+	Offset   0   0
+	Size   1014 1884
+End
+
+Lcd
+	Zoom 6
+	Offset 120 355
+	Color  0 117 138 128	# character color table
+	Color  1 113 134 124
+	Color  2 109 130 120
+	Color  3 105 126 116
+	Color  4  87 105  96
+	Color  5  19  35  32
+	Color  6   0   0   0
+	Color  7   0   0   0
+	Color  8   0   0   0
+	Color  9   0   0   0
+	Color 10   0   0   0
+	Color 11   0   0   0
+	Color 12   0   0   0
+	Color 13   0   0   0
+	Color 14   0   0   0
+	Color 15   0   0   0
+	Color 55 148 167 148	# background color table
+	Color 56 111 130 122
+	Color 57  98 113 106
+	Color 58  91 104  98
+	Color 59  85  96  90
+	Color 60  78  87  82
+	Color 61  72  79  76
+	Color 62  65  70  66
+	Color 63  59  62  58
+End
+
+Digit
+	Size 9 12
+	Offset 41 53
+	Distance 62
+End
+
+Annunciator 1
+	Size 30 9
+	Offset 0 91
+	Down 553 1930	# minus
+End
+
+Annunciator 2
+	Size 27 31
+	Offset 5 10
+	Down 6 1885		# up arrow
+End
+
+
+
+
+Annunciator 6
+	Size 27 31
+	Offset 38 10
+	Down 43 1885		# down arrow
+End
+
+
+Annunciator 8
+	Size 45 33
+	Offset 69 9
+	Down 76 1885		# left shift
+End
+
+
+
+
+Annunciator 12
+	Size 45 33
+	Offset 115 9
+	Down 123 1885		# right shift
+End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Annunciator 16
+	Size 9 6
+	Offset 88 0
+	Down 553 1930	# not used
+End
+
+
+
+
+
+
+
+
+Button 71			# ON, should be the first defined key
+	Type 0
+	Size 97 71
+	Offset 83 1681
+	Down 83 1687
+	OutIn 0 32768
+End
+
+Button 11
+	Type 0
+	Size 97 71
+	Offset 84 783
+	Down 84 788
+	OutIn 5 64
+End
+Button 12
+	Type 0
+	Size 96 71
+	Offset 236 782
+	Down 236 787
+	OutIn 4 64
+End
+Button 13
+	Type 0
+	Size 98 71
+	Offset 386 782
+	Down 386 787
+	OutIn 3 64
+End
+Button 14
+	Type 0
+	Size 98 71
+	Offset 536 782
+	Down 536 787
+	OutIn 2 64
+End
+Button 15
+	Type 0
+	Size 95 71
+	Offset 689 782
+	Down 689 787
+	OutIn 1 64
+End
+Button 16
+	Type 0
+	Size 97 74
+	Offset 839 782
+	Down 839 786
+	OutIn 0 64
+End
+
+Button 21
+	Type 0
+	Size 95 71
+	Offset 85 932
+	Down 85 938
+	OutIn 5 32
+End
+Button 22
+	Type 0
+	Size 96 71
+	Offset 235 932
+	Down 235 938
+	OutIn 4 32
+End
+Button 23
+	Type 0
+	Size 98 71
+	Offset 385 931
+	Down 385 936
+	OutIn 3 32
+End
+Button 24
+	Type 0
+	Size 96 71
+	Offset 537 931
+	Down 537 936
+	OutIn 2 32
+End
+Button 25
+	Type 0
+	Size 95 71
+	Offset 690 931
+	Down 690 936
+	OutIn 1 32
+End
+Button 26
+	Type 0
+	Size 96 71
+	Offset 840 930
+	Down 840 935
+	OutIn 0 32
+End
+
+Button 31
+	Type 0
+	Size 244 71
+	Offset 86 1082
+	Down 86 1088
+	OutIn 4 1
+End
+Button 32
+	Type 0
+	Size 96 71
+	Offset 387 1081
+	Down 387 1085
+	OutIn 3 1
+End
+Button 33
+	Type 0
+	Size 96 71
+	Offset 538 1082
+	Down 538 1088
+	OutIn 2 1
+End
+Button 34
+	Type 0
+	Size 96 71
+	Offset 689 1082
+	Down 689 1088
+	OutIn 1 1
+End
+Button 35
+	Type 0
+	Size 97 71
+	Offset 840 1083
+	Down 840 1087
+	OutIn 0 1
+End
+
+Button 41
+	Type 0
+	Size 97 71
+	Offset 83 1231
+	Down 83 1237
+	OutIn 5 8
+End
+Button 42
+	Type 0
+	Size 128 71
+	Offset 256 1231
+	Down 256 1237
+	OutIn 3 8
+End
+Button 43
+	Type 0
+	Size 128 71
+	Offset 440 1230
+	Down 440 1236
+	OutIn 2 8
+End
+Button 44
+	Type 0
+	Size 126 71
+	Offset 626 1230
+	Down 626 1236
+	OutIn 1 8
+End
+Button 45
+	Type 0
+	Size 130 71
+	Offset 807 1231
+	Down 807 1237
+	OutIn 0 8
+End
+
+Button 51
+	Type 0
+	Size 98 71
+	Offset 82 1380
+	Down 82 1386
+	OutIn 5 16
+End
+Button 52
+	Type 0
+	Size 129 71
+	Offset 255 1380
+	Down 255 1385
+	OutIn 3 16
+End
+Button 53
+	Type 0
+	Size 129 71
+	Offset 439 1380
+	Down 439 1385
+	OutIn 2 16
+End
+Button 54
+	Type 0
+	Size 128 71
+	Offset 624 1380
+	Down 624 1385
+	OutIn 1 16
+End
+Button 55
+	Type 0
+	Size 130 71
+	Offset 807 1381
+	Down 807 1386
+	OutIn 0 16
+End
+
+Button 61
+	Type 0
+	Size 98 71
+	Offset 82 1531
+	Down 82 1537
+	OutIn 5 4
+End
+Button 62
+	Type 0
+	Size 129 71
+	Offset 255 1531
+	Down 255 1537
+	OutIn 3 4
+End
+Button 63
+	Type 0
+	Size 129 70
+	Offset 439 1531
+	Down 439 1537
+	OutIn 2 4
+End
+Button 64
+	Type 0
+	Size 128 69
+	Offset 624 1532
+	Down 624 1538
+	OutIn 1 4
+End
+Button 65
+	Type 0
+	Size 130 69
+	Offset 807 1531
+	Down 807 1537
+	OutIn 0 4
+End
+
+Button 72
+	Type 0
+	Size 128 71
+	Offset 257 1681
+	Down 257 1687
+	OutIn 3 2
+End
+Button 73
+	Type 0
+	Size 131 71
+	Offset 437 1682
+	Down 437 1688
+	OutIn 2 2
+End
+Button 74
+	Type 0
+	Size 130 69
+	Offset 622 1682
+	Down 622 1688
+	OutIn 1 2
+End
+Button 75
+	Type 0
+	Size 130 69
+	Offset 805 1682
+	Down 805 1688
+	OutIn 0 2
+End
+
+Include "keyb32sii.kmi"
+Annunciator 3
+	Size 29 52
+	Offset 12 155
+	Down 830 1886	# softkey 1 chevron
+End
+Annunciator 4
+	Size 16 19
+	Offset 85 135
+	Down 490 1934	# digit 1 tail
+End
+Annunciator 5
+	Size 12 13
+	Offset 89 125
+	Down 494 1921	# digit 1 dot
+End
+Annunciator 7
+	Size 74 23
+	Offset 52 170
+	Down 61 1923		# left arrow
+End
+Annunciator 9
+	Size 16 19
+	Offset 147 135
+	Down 490 1934	# digit 2 tail
+End
+Annunciator 10
+	Size 12 13
+	Offset 151 125
+	Down 494 1921	# digit 2 dot
+End
+Annunciator 11
+	Size 29 52
+	Offset 149 155
+	Down 830 1886	# softkey 2 chevron
+End
+Annunciator 14
+	Size 16 19
+	Offset 209 135
+	Down 490 1934	# digit 3 tail
+End
+Annunciator 15
+	Size 12 13
+	Offset 213 125
+	Down 494 1921	# digit 3 dot
+End
+Annunciator 17
+	Size 89 35
+	Offset 184 167
+	Down 155 1919		# A..Z
+End
+Annunciator 19
+	Size 16 19
+	Offset 271 135
+	Down 490 1934	# digit 4 tail
+End
+Annunciator 20
+	Size 12 13
+	Offset 275 125
+	Down 494 1921	# digit 4 dot
+End
+Annunciator 23
+	Size 29 52
+	Offset 293 155
+	Down 830 1886	# softkey 3 chevron
+End
+Annunciator 24
+	Size 16 19
+	Offset 333 135
+	Down 490 1934	# digit 5 tail
+End
+Annunciator 25
+	Size 12 13
+	Offset 337 125
+	Down 494 1921	# digit 5 dot
+End
+Annunciator 27
+	Size 61 53
+	Offset 352 155
+	Down 871 1893	# warning
+End
+Annunciator 29
+	Size 16 19
+	Offset 395 135
+	Down 490 1934	# digit 6 tail
+End
+Annunciator 30
+	Size 12 13
+	Offset 399 125
+	Down 494 1921	# digit 6 dot
+End
+Annunciator 34
+	Size 16 19
+	Offset 457 135
+	Down 490 1934	# digit 7 tail
+End
+Annunciator 35
+	Size 12 13
+	Offset 461 125
+	Down 494 1921	# digit 7 dot
+End
+Annunciator 37
+	Size 29 52
+	Offset 440 155
+	Down 830 1886	# softkey 4 chevron
+End
+Annunciator 39
+	Size 16 19
+	Offset 519 135
+	Down 490 1934	# digit 8 tail
+End
+Annunciator 40
+	Size 12 13
+	Offset 523 125
+	Down 494 1921	# digit 8 dot
+End
+Annunciator 43
+	Size 86 30
+	Offset 492 168
+	Down 255 1922		# battery
+End
+Annunciator 44
+	Size 16 19
+	Offset 580 135
+	Down 490 1934	# digit 9 tail
+End
+Annunciator 45
+	Size 12 13
+	Offset 585 125
+	Down 494 1921	# digit 9 dot
+End
+Annunciator 47
+	Size 29 52
+	Offset 596 155
+	Down 830 1886	# softkey 5 chevron
+End
+Annunciator 49
+	Size 16 19
+	Offset 643 135
+	Down 490 1934	# digit 10 tail
+End
+Annunciator 50
+	Size 12 13
+	Offset 647 125
+	Down 494 1921	# digit 10 dot
+End
+Annunciator 53
+	Size 74 23
+	Offset 648 170
+	Down 401 1923	# right arrow
+End
+Annunciator 54
+	Size 16 19
+	Offset 704 135
+	Down 490 1934	# digit 11 tail
+End
+Annunciator 55
+	Size 12 13
+	Offset 709 125
+	Down 494 1921	# digit 11 dot
+End
+Annunciator 57
+	Size 29 52
+	Offset 733 155
+	Down 830 1886	# softkey 6 chevron
+End
+Annunciator 59
+	Size 16 19
+	Offset 767 135
+	Down 490 1934	# digit 12 tail
+End
+Annunciator 60
+	Size 12 13
+	Offset 771 125
+	Down 494 1921	# digit 12 dot
+End
+Annunciator 13
+	Size 93 31
+	Offset 163 10
+	Down 170 1886		# BEGIN
+End
+Annunciator 18
+	Size 87 31
+	Offset 259 10
+	Down 269 1886		# PRGM
+End
+Annunciator 21
+	Size 66 31
+	Offset 350 10
+	Down 361 1886	# EQN
+End
+Annunciator 22
+	Size 23 31
+	Offset 420 10
+	Down 430 1886	# 0
+End
+Annunciator 26
+	Size 18 31
+	Offset 443 10
+	Down 456 1886	# 1
+End
+Annunciator 28
+	Size 20 31
+	Offset 461 10
+	Down 479 1886	# 2
+End
+Annunciator 31
+	Size 20 31
+	Offset 481 10
+	Down 503 1886	# 3
+End
+Annunciator 32
+	Size 23 31
+	Offset 504 10
+	Down 529 1886	# G
+End
+Annunciator 33
+	Size 62 31
+	Offset 527 10
+	Down 552 1886	# RAD
+End
+Annunciator 36
+	Size 60 31
+	Offset 592 10
+	Down 621 1886	# HEX
+End
+Annunciator 38
+	Size 63 31
+	Offset 656 10
+	Down 688 1886	# OCT
+End
+Annunciator 41
+	Size 50 31
+	Offset 724 10
+	Down 757 1886	# BIN
+End
+Annunciator 42
+	Size 9 6
+	Offset 176 0
+	Down 553 1930	# not used
+End
+Annunciator 46
+	Size 9 6
+	Offset 264 0
+	Down 553 1930	# not used
+End
+Annunciator 48
+	Size 9 6
+	Offset 352 0
+	Down 553 1930	# not used (set in self test when HEX is tested)
+End
+Annunciator 51
+	Size 9 6
+	Offset 440 0
+	Down 553 1930	# not used
+End
+Annunciator 52
+	Size 9 6
+	Offset 527 0
+	Down 553 1930	# not used
+End
+Annunciator 56
+	Size 9 6
+	Offset 616 0
+	Down 553 1930	# not used (set in self test when BIN is tested)
+End
+Annunciator 58
+	Size 9 6
+	Offset 704 0
+	Down 553 1930	# not used
+End
